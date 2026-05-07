@@ -10,7 +10,7 @@ First, define the scope, expectations, standards, and guidelines for your projec
 
 > [!question] Decision Factors
 > Evaluate the following questions:
-> 
+>
 > - Does the documentation scope cover many products or product locales?
 > - Is the documentation scope under the effect of any regulatory constraints?
 > - Is the cost of error high in your domain?
@@ -51,7 +51,7 @@ Next, design and document the process of documentation development, tie it to th
 6. How will the changes be released in case of approval?
 
     6.1. Will the release (deployment) process be automatic or manual?
-    
+
     6.2. Who is responsible for timely and seamless releases?
 
 7. Will the product/service and documentation changes require a changelog?
@@ -60,7 +60,7 @@ Next, design and document the process of documentation development, tie it to th
 
 > [!success] Recommended Rules
 > Consider following these rules for greater transparency:
-> 
+>
 > - Use meaningful, **searchable**, and specific commit messages that describe documentation increments.
 > - Create issues for planned work and changes, use meaningful, searchable, and specific issue names.
 > - When resolving issues, work in **branches** named after the issues.

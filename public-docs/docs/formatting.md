@@ -18,6 +18,7 @@ Even the best designed texts are difficult to decipher when their visual present
 
 > [!question] Links
 > To facilitate navigation of your documentation by the readers, make sure to:
+
 > - Use only **relative** paths in Markdown, never link to absolute local paths like `C:/Users/...`.
 > - Use anchor links to direct the reader's attention towards important document sections.
 > - Use auto-generated tables of content with stable links.
@@ -34,7 +35,7 @@ When demonstrating complex or hard-to-describe concepts, include **visual elemen
 Additionally, apply these tips to ensure a smooth visual experience for your readers:
 
 > [!tip] Tips
-> 
+>
 > - Store images under a **predictable** and meaningfully named path (e.g. `docs/assets/images/`) to avoid misplacing the links.
 > - Use **descriptive** file names for all imported assets (e.g. `controller-flow.png` instead of `image1.png`).
 > - Compress large assets to improve load time.

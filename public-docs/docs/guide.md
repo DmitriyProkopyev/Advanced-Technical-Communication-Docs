@@ -1,3 +1,5 @@
+# Guidelines
+
 The following pages can help you document a software project:
 
 - [Homepage](index.md). The entry point into this site.

@@ -14,7 +14,7 @@ Any good decision is only good in **some contexts** and not in others. Before wr
 
 > [!info] Adapting to the context
 > The general advice for adapting your documents to the context is:
-> 
+>
 > - Use the abstraction level your readers need to achieve their goal, i.e. differentiate between relevant and irrelevant information **from the perspective** of the goal of your reader.
 > - Adjust the terminology to the proficiency level of the readers.
 > - Write for exactly the use cases your readers will experience.
@@ -27,13 +27,13 @@ Once the context is clear, proceed to standardize the terminology of the documen
 
 1. List all key domain terms and check that each term has a single, consistent meaning.
 
-> [!warning] Ambiguity
-> Ensure each signifier (label) points unambiguously to one signified (meaning) concept. If a label is reused with different meanings, treat it as a **defect** and rename or clarify.
-   
+    > [!warning] Ambiguity
+    > Ensure each signifier (label) points unambiguously to one signified (meaning) concept. If a label is reused with different meanings, treat it as a **defect** and rename or clarify.
+
 2. Maintain or update a controlled vocabulary so that every important term used in the document is defined once and reused consistently.
 
-> [!example] Visual intuition
-> For icons and UI symbols, validate that the visual sign (e.g., gear, question mark) matches common user expectations in this domain. If the visual representation is inconsistent or mismatches the user intuition, change and unify it.
+    > [!example] Visual intuition
+    > For icons and UI symbols, validate that the visual sign (e.g., gear, question mark) matches common user expectations in this domain. If the visual representation is inconsistent or mismatches the user intuition, change and unify it.
 
 ___
 
@@ -84,7 +84,7 @@ Then, proceed to cut the excessive complexity from the text. Specifically:
 - Scan for long, multi‑clause sentences and split them into shorter sentences or bullet points.
 - Remove or relocate low‑value, high‑effort content (overly abstract explanations, implementation trivia) to advanced or appendix sections, keeping core flows focused on **immediate user goals**.
 - Add scaffolding and examples for novices, compress wording and avoid over‑explaining basics for experts.
-- Separate instructions by OS, role, or context instead of mixing them in one paragraph.   
+- Separate instructions by OS, role, or context instead of mixing them in one paragraph.
 - Use [visual scaffolding](formatting.md): numbered steps for procedures, bullet points for options, code blocks for commands, tables for parameter lists, and consistent formatting for repeated patterns.
 
 ___
