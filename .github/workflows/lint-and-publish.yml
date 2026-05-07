@@ -81,4 +81,4 @@ jobs:
           pip install mkdocs mkdocs-obsidian-bridge
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --config-file ./public-docs/mkdocs.yml
