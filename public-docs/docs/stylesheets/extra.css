@@ -1,0 +1,15 @@
+:root {
+  --md-admonition-icon--people: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3Zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13Zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.88 1.97 3.45V19h6v-2.5C23 14.17 18.33 13 16 13Z"/></svg>');
+}
+
+.md-typeset .admonition.people,
+.md-typeset details.people {
+  border-left: 4px solid rgb(150, 50, 255);
+}
+
+.md-typeset .people > .admonition-title::before,
+.md-typeset .people > summary::before {
+  background-color: rgb(150, 50, 255);
+  -webkit-mask-image: var(--md-admonition-icon--people);
+  mask-image: var(--md-admonition-icon--people);
+}

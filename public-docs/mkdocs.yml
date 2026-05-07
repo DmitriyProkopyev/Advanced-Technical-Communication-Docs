@@ -1,0 +1,46 @@
+site_name: My MkDocs Site
+site_description: A documenting practice repository for "Advanced Technical Communications" course.
+site_author: Dmitriy Prokopyev
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+  palette:
+    primary: indigo
+    accent: deep orange
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - obsidian-bridge
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - obsidian_callouts
+  - obsidian_media_mkdocs
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - tables
+
+nav:
+  - Guides:
+    - Home: index.md
+    - Processes: processes.md
+    - Voice and Tone: voice_and_tone.md
+    - Representation: representation.md
+    - Formatting: formatting.md
+  - Navigate: guide.md
