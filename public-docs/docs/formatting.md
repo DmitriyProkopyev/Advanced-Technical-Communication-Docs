@@ -18,7 +18,7 @@ Even the best designed texts are difficult to decipher when their visual present
 
 > [!question] Links
 > To facilitate navigation of your documentation by the readers, make sure to:
-
+>
 > - Use only **relative** paths in Markdown, never link to absolute local paths like `C:/Users/...`.
 > - Use anchor links to direct the reader's attention towards important document sections.
 > - Use auto-generated tables of content with stable links.

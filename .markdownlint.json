@@ -1,5 +1,5 @@
 {
   "default": true,
   "MD013": false,
-  "MD028": { "blanks_allowed": true }
+  "MD028": false
 }
