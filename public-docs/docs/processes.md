@@ -39,7 +39,7 @@ Next, design and document the process of documentation development, tie it to th
 
     3.2. Which documentation guidelines should be specified?
 
-    3.3. Who **owns the terminology** and has the final authority in case of diagreements related to it?
+    3.3. Who **owns the terminology** and has the final authority in case of disagreements related to it?
 
     3.4. Who **owns** the voice and tone **standards** and has the final authority in case of disagreements related to them?
 
@@ -53,7 +53,7 @@ Next, design and document the process of documentation development, tie it to th
     6.1. Will the release (deployment) process be automatic or manual?
     
     6.2. Who is responsible for timely and seamless releases?
-    
+
 7. Will the product/service and documentation changes require a changelog?
 
     7.1. Who is responsible for writing, reviewing, and releasing the changelog?

@@ -39,7 +39,7 @@ ___
 
 ## Structure
 
-Then, define the documentation structure. Nearly always your readers only need a small fraction of the information presented. The more intuituve the structure of the documents is, the easier it will be for them to find the right document subset.
+Then, define the documentation structure. Nearly always your readers only need a small fraction of the information presented. The more intuitive the structure of the documents is, the easier it will be for them to find the right document subset.
 
 1. Design a URL structure that the readers will **easily understand**. Mirror this structure in your documents.
 2. Group the content into files and directories by use case or reader type.
@@ -54,7 +54,7 @@ Then, select the right communicative function:
 
 | Communicative Function | Use cases                                                     | Example                                           |
 | ---------------------- | ------------------------------------------------------------- | ------------------------------------------------- |
-| Referential            | To inform the reciever                                        | "The rate limit for this endpoint is 100 RPM."    |
+| Referential            | To inform the receiver                                        | "The rate limit for this endpoint is 100 RPM."    |
 | Conative               | To influence the receiver into an action                      | "Report the bug immediately."                     |
 | Metalingual            | To refine the language/terminology/semantics in communication | "What exactly do you refer to by 'prerequisite'?" |
 | Phatic                 | To maintain contact with the receiver                         | "Hello, how are you?"                             |
@@ -70,8 +70,8 @@ ___
 
 It is often easier to cut the excessive than to add the missing. Before proceeding to improve the text, make sure you did not miss anything important. Evaluate this checklist:
 
-- Review the actions that lead to **empty states** (empty lists, disabled buttons, no output, timeouts). Ensure the absense of messages/documents does not confuse the user.
-- Review the edge cases that lead to unusual behavior. Ensure this behaviour does not confuse the user.
+- Review the actions that lead to **empty states** (empty lists, disabled buttons, no output, timeouts). Ensure the absence of messages/documents does not confuse the user.
+- Review the edge cases that lead to unusual behavior. Ensure this behavior does not confuse the user.
 - Review the disabled or unavailable actions. Ensure their unavailability is clearly explained and does not confuse the user.
 
 ___

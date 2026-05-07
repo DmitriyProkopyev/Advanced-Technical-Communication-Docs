@@ -3,7 +3,7 @@
 Welcome to the documentation guide written as lecture notes for **"Advanced Technical Documentation"** course.
 
 > [!info] Scope
-> Dynamicaly evolving software projects that require accurate documentation at all times, yet do not have a dedicated technical writer.
+> Dynamically evolving software projects that require accurate documentation at all times, yet do not have a dedicated technical writer.
 
 > [!people] Target Audience
 > Developers who seek to quickly write a good enough documentation.
