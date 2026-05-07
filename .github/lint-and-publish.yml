@@ -1,0 +1,84 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  lint:
+    name: Lint docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >-
+            --verbose 
+            --no-progress 
+            "./public-docs/docs/**/*.md"
+          fail: true
+
+      - name: Run CSpell
+        uses: streetsidesoftware/cspell-action@v8
+        with:
+          strict: true
+          incremental_files_only: false
+          config: cspell.json
+          files: |
+            ./public-docs/docs/**/*
+          check_dot_files: explicit
+
+      - name: Run Vale
+        uses: vale-cli/vale-action@v2
+        with:
+          files: ./public-docs/docs
+
+      - name: Run markdownlint
+        run: markdownlint "./public-docs/docs/**/*.md"
+
+  deploy:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    needs: lint
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-obsidian-bridge
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
